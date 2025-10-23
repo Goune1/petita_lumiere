@@ -1,15 +1,14 @@
-import mongoose, { Schema, models } from "mongoose";
+// models/products.ts
 
-const ProductSchema = new Schema(
-  {
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    image: { type: String, required: true },
-    price: { type: Number, required: true },
-  },
-  { timestamps: true }
-);
+import mongoose, { Schema, model, models } from 'mongoose';
 
-const Product = models.Product || mongoose.model("Product", ProductSchema);
+const productSchema = new Schema({
+  name: { type: String, required: true },
+  description: { type: String },
+  images: [{ type: String, required: true }], 
+  price: { type: Number, required: true },
+}, { timestamps: true });
 
+// S'assurer que le modèle est compilé une seule fois
+const Product = models.Product || model('Product', productSchema);
 export default Product;

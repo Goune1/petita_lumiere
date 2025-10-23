@@ -24,7 +24,7 @@ export default function Navbar() {
             href="/shop"
             className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
           >
-            Shop
+            Catalogue
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                 className="text-gray-800 font-medium hover:text-blue-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Shop
+                Catalogue
               </Link>
             </div>
           </motion.div>

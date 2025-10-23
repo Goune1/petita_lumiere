@@ -1,25 +1,27 @@
-import Navbar from "./components/nav"
-// Note: Le composant Image n'est plus nécessaire si on utilise uniquement <img>
-// import Image from "next/image" 
+import Navbar from "@/components/nav"
+import Footer from "@/components/footer"
+import Spotlight  from "@/components/ui/spotlight"
+import { Highlighter } from "@/components/ui/highlighter"
+
 
 export default function Home() {
     return (
+        <>
         <div className="min-h-screen bg-gray-50 text-black">
-            <Navbar/>
-            <div className="pt-20 md:pt-28 lg:pt-36 flex flex-col justify-center items-center ">
-                
-                <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center tracking-tight mb-2">
-                    Petita Lumière
-                </h1>
-                
-                <h2 className="text-lg sm:text-xl md:text-3xl text-center font-semibold tracking-tight mb-6">
-                    Parce qu'éclairer avec goût, c'est tout un art.
-                </h2>
-                
-                <div className="pt-4">
-                    <a href="/shop" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold transition-colors shadow-md">
-                        Accéder au catalogue
-                    </a>
+            <div className=" md:pt-28 lg:pt-36 flex flex-col justify-center items-center ">
+            <Navbar/> 
+            <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="rgb(255, 244, 100)" />
+                <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-28 ">
+                    <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-950 to-neutral-500 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
+                        Éclairer avec <Highlighter action="underline" color="#FF9800">goût</Highlighter>,<br /> c'est tout un art.
+                    </h1>
+                    <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-700">
+                        On chine et on vous propose des objets anciens ou des créations uniques issues de nos trouvailles. Nous créons avec ça des luminaires uniques qui sauront, sans doute, vous satisfaire.
+                    </p>
+
+                    <div className="flex justify-center items-center pt-6">
+                        <a href="/catalogue" className="bg-amber-400 rounded-xl text-neutral-600 font-semibold px-4 py-3">Accéder au catalogue</a>
+                    </div>
                 </div>
 
                 <img 
@@ -30,5 +32,7 @@ export default function Home() {
                 
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
