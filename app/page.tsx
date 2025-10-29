@@ -16,7 +16,7 @@ export default function Home() {
                         Éclairer avec <Highlighter action="underline" color="#FF9800">goût</Highlighter>,<br /> c'est tout un art.
                     </h1>
                     <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-700">
-                        On chine et on vous propose des objets anciens ou des créations uniques issues de nos trouvailles. Nous créons avec ça des luminaires uniques qui sauront, sans doute, vous satisfaire.
+                    Passionnés de luminaires, nous créons des lustres, appliques et lampes où se mêlent les opalines, les verres de Clichy, les tulipes ou encore les globes. Festonné, bullé, ambré ou soufflé, pour quel abat jour vous craquerez ?
                     </p>
 
                     <div className="flex justify-center items-center pt-6">
