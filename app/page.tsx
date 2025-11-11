@@ -13,7 +13,7 @@ export default function Home() {
             <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="rgb(255, 244, 100)" />
                 <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-28 ">
                     <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-950 to-neutral-500 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-                        Éclairer avec <Highlighter action="underline" color="#FF9800">goût</Highlighter>,<br /> c'est tout un art.
+                        Éclairer avec goût,<br /> c'est tout un art.
                     </h1>
                     <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-700">
                     Passionnés de luminaires, nous créons des lustres, appliques et lampes où se mêlent les opalines, les verres de Clichy, les tulipes ou encore les globes. Festonné, bullé, ambré ou soufflé, pour quel abat jour vous craquerez ?
