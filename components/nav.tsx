@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Lien desktop */}
         <div className="hidden sm:flex items-center space-x-6">
           <Link
-            href="/shop"
+            href="/catalogue"
             className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
           >
             Catalogue
@@ -49,7 +49,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col px-6 py-4 space-y-4">
               <Link
-                href="/shop"
+                href="/catalogue"
                 className="text-gray-800 font-medium hover:text-blue-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
